@@ -1,66 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Lalitha Sivakumar</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
     body {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background: #f4f4f4;
-      color: #222;
+      background: #f9f9f9;
+      color: #333;
     }
+
     .container {
       max-width: 960px;
-      margin: auto;
-      padding: 2rem;
+      margin: 3rem auto;
       background: white;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 2rem;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
       display: flex;
+      flex-wrap: wrap;
       gap: 2rem;
-      align-items: flex-start;
     }
+
     .sidebar {
       flex: 1;
-      max-width: 250px;
+      min-width: 220px;
+      max-width: 300px;
       text-align: center;
     }
+
     .sidebar img {
-      width: 100%;
+      width: 200px;
+      height: 200px;
       border-radius: 50%;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      object-fit: cover;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
     }
+
     .contact {
       margin-top: 1rem;
       font-size: 0.9rem;
-      color: #444;
+      color: #555;
     }
-    .contact a {
-      color: #007acc;
-      text-decoration: none;
+
+    .contact p {
+      margin: 0.4rem 0;
     }
+
     .main {
       flex: 2;
+      min-width: 300px;
     }
+
     .main h1 {
       margin-top: 0;
     }
+
     .links a {
       margin-right: 1rem;
-      color: #007acc;
       text-decoration: none;
+      color: #007acc;
+    }
+
+    .links a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
   <div class="container">
     <div class="sidebar">
-      <img src="assets/profile.jpg" alt="Lalitha Sivakumar">
+      <img src="assets/profile.jpg" alt="Lalitha Sivakumar" />
       <div class="contact">
         <p><strong>Lalitha Sivakumar</strong></p>
-        <p>la2pixel [at] student.uni-tuebingen.de</p>
+        <p>lalitha.sivakumar [at] student.uni-tuebingen.de</p>
         <p>Tübingen, Germany</p>
       </div>
     </div>
@@ -69,23 +84,21 @@
       <p>
         I’m a final-year Master's student in Quantitative Data Science at the
         <a href="https://www.uni-tuebingen.de/en.html" target="_blank">University of Tübingen</a>,
-        currently working as a research assistant at the
+        and a research assistant at the
         <a href="https://is.mpg.de/" target="_blank">Max Planck Institute for Intelligent Systems</a>
         under <a href="https://tomsuehr.com/" target="_blank">Tom Sühr</a>.
-        My research focuses on benchmarking large language models (LLMs) and integrating
-        psychometric measurement theory into the fine-tuning process.
       </p>
       <p>
-        I previously earned a Bachelor's in Economics and worked across industry and academia—
-        including internships at
+        My research focuses on benchmarking large language models (LLMs) and integrating
+        measurement theory into fine-tuning. Previously, I interned at
         <a href="https://www.accenture.com/us-en/industries/industrial-equipment" target="_blank">Accenture</a>
         and <a href="https://www.bosch-engineering.com/de/unternehmen/standorte/abstatt.html" target="_blank">Bosch</a>,
-        where I modeled driver responses from control and biometric data.
+        applying data science in automotive and industrial projects.
       </p>
       <p>
-        I'm currently doing my thesis at the
+        I’m currently completing my thesis at the
         <a href="https://www.imsb.uni-stuttgart.de/research/cbb/" target="_blank">Computational Biophysics and Biorobotics Lab</a>,
-        developing a simulation framework to teach humanoid agents realistic gait cycles using few-shot multimodal locomotion data.
+        where I develop simulation-based frameworks for humanoid gait learning using multimodal locomotion data.
       </p>
       <div class="links">
         <a href="CV.pdf">View CV</a>
@@ -96,3 +109,4 @@
   </div>
 </body>
 </html>
+
