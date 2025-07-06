@@ -1,6 +1,12 @@
-title: Lalitha Sivakumar
-description: Personal site
-theme: minima
+title: Your Name
+author: Your Name
+description: Master’s student / Research Assistant in Machine Learning & Psychometrics
+theme: al-folio
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
 plugins:
   - jekyll-relative-links
 relative_links:
